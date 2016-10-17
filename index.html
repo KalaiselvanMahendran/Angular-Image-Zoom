@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html ng-app="Magnify">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Magnify</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+</head>
+<body ng-controller="imageCtrl">
+
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-6 col-sm-6 col-md-4 col-lg-4" ng-repeat="img in canImages">
+				<img src="{{img.can_path}}" alt="{{img.can_name}}" width="150px" ng-click="setImage(img.can_path)">
+			</div>
+		</div>
+	</div>
+
+	<div class="product-zoom-magnify">
+		<div class="product-zoom-large" 
+			style="background: url({{currentImg}}) no-repeat;"></div>
+		<img class="product-zoom-small" src="{{currentImg}}" width="200"/>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+	<script src="http://thecodeplayer.com/uploads/js/prefixfree.js"></script>
+	<script src="http://thecodeplayer.com/uploads/js/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
+
+
