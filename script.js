@@ -2,7 +2,8 @@ $(document).ready(function(){
 
 	var native_width = 0;
 	var native_height = 0;
-	// Kalaiselvan
+	// Kalaiselvan 1st change
+	// Kalaiselvan 2nd change
 	//Now the mousemove function
 	$(".product-zoom-magnify").mousemove(function(e){
 		//When the user hovers on the image, the script will first calculate
