@@ -2,12 +2,7 @@ $(document).ready(function(){
 
 	var native_width = 0;
 	var native_height = 0;
-<<<<<<< HEAD
-	// Kalaiselvan 1st change
-	// Kalaiselvan 2nd change
-=======
 
->>>>>>> parent of b3711de... add comment on script.js file
 	//Now the mousemove function
 	$(".product-zoom-magnify").mousemove(function(e){
 		//When the user hovers on the image, the script will first calculate
